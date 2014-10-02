@@ -1,0 +1,157 @@
+/*jslint browser: false, devel: true, continue: true, debug: true, eqeq: true, newcap: true, nomen: true, plusplus: true, regexp: true*/
+header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color:white;
+}
+
+
+#results .word-details{
+	background-color: greenyellow;
+	border-radius: 13px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right:5px;
+	box-shadow: black 2px 3px 4px;
+}
+
+#results:last-child .word-details{
+    margin-bottom: 10px;
+}
+
+#results .wordname{
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.wordname>li {
+	margin-top	:2px;
+}
+
+.word-details ul li {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.word-details .meaningHeading, .word-details .usageHeading{
+	font-weight: bold;
+}
+
+body *::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+body *::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body *::-webkit-scrollbar-thumb
+{
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;	
+    background-color: #FFF;
+	background-image: -webkit-gradient(linear,40% 0%,75% 84%,from(#4D9C41),to(#19911D),color-stop(.6,#54DE5D))
+}
+
+header .heading{
+	font-size: 28px;
+	padding: 12px;
+	margin-left: 20px;
+	font-family: Airstream, Arial;
+	display: inline-block;
+}
+
+#config_area {
+    float:right;
+    margin: 12px;
+}
+#config_area li{
+    display: inline-block;
+}
+
+.green   { background-color: green; }
+.red     { background-color: red;  }
+
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 30px;
+   padding: 5px;
+   width: 60px;
+}
+.styled-select{
+    display: inline-block;
+}
+.styled-select span{
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #fff;
+}
+
+button#clear_Results{
+    background-color: red;
+    color: #fff;
+    border: 1px solid transparent;
+    border: 1px solid transparent;
+}
+
+#texteditor{
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    margin: 1%;
+    width: 33%;
+    height: 92%;
+    padding: 1%;
+    cursor: text;
+    overflow-y: auto;
+}
+
+#controls{
+    display:inline-block;
+    background-color: inherit;
+    border:1px solid black;
+    width:10%; 
+    height: 96%;
+    margin: 1%;
+    overflow: hidden;
+}
+
+#results{
+    display:inline-block;
+    background-color: white;
+    border:1px solid black;
+    width:60%;
+    height: 97%;
+    margin: 1%;
+    overflow:auto;
+}
+
+#container{
+    width: 100%;
+    margin: auto;
+    height:580px;
+    background-color: red;
+    overflow: hidden;
+    padding:10px;
+    box-sizing: border-box;
+}

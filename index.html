@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<TITLE>Word Meaning</TITLE>
+        <meta charset="UTF-8">
+        <meta name="description" content="Online Dictionary">
+        <meta name="author" content="Anand Harshan">
+		<link rel="stylesheet" type="text/css" href="css/maincss.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	</HEAD>
+	<BODY>
+		<header>
+            <span class="heading"><span>Wordnik Dictionary</span></span>
+            <ul id="config_area">
+            <li  class="styled-select red rounded">
+                <span>No of Definition:: </span>
+                <select id = "definition_Limit">
+                    <option value = 1> 1 </option>
+                    <option value = 2> 2 </option>
+                    <option selected="selected" value = 3> 3 </option>
+                    <option value = 4> 4 </option>
+                    <option value = 5> 5 </option>
+                </select>
+            </li>
+
+            <li  class="styled-select red rounded">
+                <span>No of Examples:: </span>
+                <select id = "example_Limit">
+                    <option value = 1> 1 </option>
+                    <option value = 2> 2 </option>
+                    <option selected="selected" value = 3> 3 </option>
+                    <option value = 4> 4 </option>
+                    <option value = 5> 5 </option>
+                </select>
+            </li>
+            <li><button id="clear_Results">CLEAR</button></li>
+            </ul>
+        </header>
+        <div id="container">
+            <div id="texteditor"  contenteditable = "true" placeholder="Type or Paste the Text Here."></div>
+            <div id="results">
+                <!--The word meaning results get appended here. -->
+            </div>
+        </div>
+        <footer>
+        
+        </footer>
+        <!--Loading Script files at the bottom to increase performance of loading DOM-->
+        <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+	</BODY>
+</HTML>
